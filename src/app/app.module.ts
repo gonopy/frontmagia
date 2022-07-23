@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisualModule } from './visual/visual.module';
+import { PokeModule } from './poke/poke.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,8 @@ import { VisualModule } from './visual/visual.module';
     VisualModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PokeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
