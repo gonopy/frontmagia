@@ -7,10 +7,11 @@ import { TrabajadorComponent } from './trabajador/trabajador.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HttpClientModule } from '@angular/common/http';
 import { TareasService } from '../../services/tareas/tareas.service';
+import { TrabajadorService } from '../../services/trabajador/trabajador.service';
 
 @NgModule({
   imports: [CommonModule, TrabajadorRoutingModule, DragDropModule, HttpClientModule],
   declarations: [MantenedorComponent, TrabajadorComponent],
-  providers: [TareasService],
+  providers: [TareasService,TrabajadorService],
 })
 export class TrabajadorModule {}

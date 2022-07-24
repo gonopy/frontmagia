@@ -5,6 +5,7 @@ import {
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
 import { TareasService } from 'src/app/services/tareas/tareas.service';
+import { TrabajadorService } from '../../../services/trabajador/trabajador.service';
 
 @Component({
   selector: 'app-trabajador',
@@ -16,7 +17,7 @@ export class TrabajadorComponent {
   done: string[] = [];
   pagina: number = 0;
 
-  constructor(private pokeService: TareasService) {
+  constructor(private pokeService: TrabajadorService) {
     this.setData();
   }
 
