@@ -6,7 +6,6 @@ import { MantenedorComponent } from './mantenedor/mantenedor.component';
 import { TrabajadorComponent } from './trabajador/trabajador.component';
 import { DragDropModule} from '@angular/cdk/drag-drop';
 
-
 @NgModule({
   declarations: [
     MantenedorComponent,

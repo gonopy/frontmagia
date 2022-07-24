@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ComponentRoutingModule } from './component-routing.module';
 import { HomeComponent } from './home/home.component';
 import { TareaModule } from './tarea/tarea.module';
 import { TrabajadorModule } from './trabajador/trabajador.module';
+import { PaginanoencontradaComponent } from './paginanoencontrada/paginanoencontrada.component';
+import { TrabajadorRoutingModule } from './trabajador/trabajador-routing.module';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, PaginanoencontradaComponent],
   imports: [
     CommonModule,
-    ComponentRoutingModule,
     TareaModule,
     TrabajadorModule,
+    TrabajadorRoutingModule,
   ],
   exports: [HomeComponent],
 })
