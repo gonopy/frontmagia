@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MantenedorComponent } from '../trabajador/mantenedor/mantenedor.component';
 import { TrabajadorComponent } from './trabajador/trabajador.component';
-import { PaginanoencontradaComponent } from '../paginanoencontrada/paginanoencontrada.component';
 
 const routes: Routes = [
   {

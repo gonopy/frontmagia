@@ -1,13 +1,22 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './component/home/home.component';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 const routes: Routes = [
-
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  {
+    path: 'inicio',
+    loadChildren: () =>
+      import('./component/comun/comun.module').then(
+        (m) => m.ComunModule
+      ),
+  },
   {
     path: 'trabajador',
     loadChildren: () =>
-      import('./component/trabajador/trabajador.module').then((m) => m.TrabajadorModule),
+      import('./component/trabajador/trabajador.module').then(
+        (m) => m.TrabajadorModule
+      ),
   },
   {
     path: 'tarea',
@@ -20,4 +29,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
