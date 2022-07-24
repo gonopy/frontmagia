@@ -10,7 +10,7 @@ import { TareasService } from '../../services/tareas/tareas.service';
 import { TrabajadorService } from '../../services/trabajador/trabajador.service';
 
 @NgModule({
-  imports: [CommonModule, TrabajadorRoutingModule, DragDropModule, HttpClientModule],
+  imports: [CommonModule, TrabajadorRoutingModule, DragDropModule, HttpClientModule ],
   declarations: [MantenedorComponent, TrabajadorComponent],
   providers: [TareasService,TrabajadorService],
 })

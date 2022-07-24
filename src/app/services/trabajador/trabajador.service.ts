@@ -9,11 +9,14 @@ export class TrabajadorService {
   constructor(private http: HttpClient) {}
 
   getList() {
-    let url = `${this.urlBase}trabajador`;
-    return this.http.get(url);
+    return this.http.get(`${this.urlBase}trabajador`);
   }
 
   getPokeData(name: string) {
     return this.http.get(`${this.urlBase}/${name}`);
+  }
+
+  postTareaTrabajador(request: any) {
+    return this.http.post(`${this.urlBase}trabajador`, request);
   }
 }

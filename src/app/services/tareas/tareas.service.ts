@@ -9,8 +9,7 @@ export class TareasService {
   constructor(private http: HttpClient) {}
 
   getList() {
-    let url = `${this.urlBase}tareas`;
-    return this.http.get(url);
+    return this.http.get(`${this.urlBase}tareas`);
   }
 
   getPokeData(name: string) {

@@ -7,9 +7,7 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () =>
-      import('./component/comun/comun.module').then(
-        (m) => m.ComunModule
-      ),
+      import('./component/comun/comun.module').then((m) => m.ComunModule),
   },
   {
     path: 'trabajador',

@@ -6,6 +6,7 @@ import {
 } from '@angular/cdk/drag-drop';
 import { TareasService } from 'src/app/services/tareas/tareas.service';
 import { TrabajadorService } from '../../../services/trabajador/trabajador.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-trabajador',
