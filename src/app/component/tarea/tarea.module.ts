@@ -2,16 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TareaRoutingModule } from './tarea-routing.module';
-import { MantenedorComponent } from './mantenedor/mantenedor.component';
-
+import { TareaComponent } from './tarea/tarea.component';
 
 @NgModule({
-  declarations: [
-    MantenedorComponent
-  ],
-  imports: [
-    CommonModule,
-    TareaRoutingModule
-  ]
+  declarations: [TareaComponent],
+  imports: [CommonModule, TareaRoutingModule],
 })
-export class TareaModule { }
+export class TareaModule {}

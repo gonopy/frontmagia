@@ -5,11 +5,11 @@ import { TrabajadorComponent } from './trabajador/trabajador.component';
 import { PaginanoencontradaComponent } from '../paginanoencontrada/paginanoencontrada.component';
 
 const routes: Routes = [
-  {path: '', component:PaginanoencontradaComponent, 
+  {
+    path: '',
+    component: MantenedorComponent,
     children: [
-      { path: 'mantenedor', component: MantenedorComponent },
       { path: 'trabajador', component: TrabajadorComponent },
-      { path: '**', component: PaginanoencontradaComponent },
     ],
   },
 ];

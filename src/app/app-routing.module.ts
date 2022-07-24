@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: HomeComponent },
-  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+
   {
     path: 'trabajador',
     loadChildren: () =>
